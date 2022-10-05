@@ -2,9 +2,14 @@ apiVersion: config.openshift.io/v1
 kind: OAuth
 metadata:
   annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"config.openshift.io/v1","kind":"OAuth","metadata":{"annotations":{"release.openshift.io/create-only":"true"},"name":"cluster","resourceVersion":"47871664"},"spec":{"identityProviders":[{"htpasswd":{"fileData":{"name":"htpasswd-secret"}},"mappingMethod":"claim","name":"htpasswd_provider","type":"HTPasswd"}]}}
     release.openshift.io/create-only: "true"
+  creationTimestamp: "2022-09-19T08:43:15Z"
+  generation: 16
   name: cluster
-  resourceVersion: "47871664"
+  resourceVersion: "48197781"
+  uid: f26e509b-aebd-4a82-8bb7-1efcfafa8061
 spec:
   identityProviders:
   - htpasswd:
