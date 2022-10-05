@@ -30,7 +30,7 @@ pipeline {
 				branch 'main'
 			}
       steps {
-				sh 'oc login -u testuser -p redhat123'
+				sh 'oc login -u testuser -p redhat123 https://api.lab.ao.test:6443'
 				sh 'oc new-project test-testuser || true'
       }
     }
